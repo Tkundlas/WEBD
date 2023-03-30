@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body bgcolor="violet">
+    <form action="">
+        <!-- <fieldset> -->
+        <!-- <legend>Personal Details</legend> -->
+        <h1 align="CENTER">ENTRY FORM</h1>
+        <table border="6" bgcolor="pink" align="center">
+            <tr>
+                <td>
+                    <label for="fname">Enter your name</label><br>
+                    <input id="fname" name="fname" type="text" /><br>
+                    <label for="lname">last name</label><br>
+                    <input id="lname" name="lname" type="text" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="date">ENTER DOB</label>
+                    <input type="date" name="date" >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <span>CHOOSE YOUR FAVORITE WEB LANGUAGE</span><br>
+                    <input type="radio" id="language3" name="fav" />
+                    <label for="language3">HTML</label><br>
+                    <input type="radio" id="JAVA" name="fav" />
+                    <label for="JAVA">JAVA</label><br>
+                    <input type="checkbox" id="language1" name="language1" value="CSS" />
+                    <label for="language1">CSS</label><br>
+                    <input type="checkbox" id="language2" name="language1" value="JAVASCRIPT" />
+                    <label for="language2">JAVASCRIPT</label><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                  <span>Enter your subject</span><br>
+                    <select name="subject">
+                        <option value="os">OPERATING SYSTEM</option>
+                        <option value="DBMS">DBMS</option>
+                        <option value="ss">SYSTEM SOFTWARE</option>
+                        <option value="CD">COMPILER DESIGN</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>ADDRESS</span><br>
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+            
+        </table>
+        <!-- </fieldset> -->
+    </form>
+</body>
+
+</html>
