@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#btn{
+    padding: 10px 14px;
+    background-color: pink;
+    border: 2px solid black;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+}
+</style>
+<body>
+
+    <!-- browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    
+    form ke events:
+    submit
+    focus 
+
+    DOMcontentLoaded
+
+    transitionend -->
+
+    <div class="container">
+    <h1> this my heading</h1>
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro doloribus architecto excepturi. Nisi consectetur at odio nemo explicabo rem enim maiores cupiditate doloremque minus eos veritatis, animi consequatur quod deserunt.
+    Sapiente natus est necessitatibus sunt odit veritatis obcaecati, fugit doloribus, quo cumque suscipit, modi mollitia. Rerum ipsam obcaecati porro sequi magni est placeat optio illo totam, fuga neque vel alias.
+    Nesciunt ipsa beatae, temporibus iure illo pariatur velit consequuntur reiciendis architecto libero dignissimos ad hic porro eos doloribus in asperiores culpa vero nobis nisi corporis iste ea deserunt? Ex, nisi!
+    Nihil ullam alias perspiciatis doloribus explicabo saepe ipsum tempore, quisquam excepturi nisi quod maiores pariatur quia officia assumenda dolor, quaerat facilis minus reiciendis. Esse cum pariatur sequi. Enim, sapiente eius.
+    Cumque tempora libero eaque inventore sunt numquam assumenda doloremque animi, voluptates fugit exercitationem? Alias autem nostrum nesciunt numquam, fugit a aperiam exercitationem nam, earum quas tempora? Dolor sed omnis ratione.
+    Praesentium rem asperiores eius debitis cumque qui animi repudiandae totam explicabo vel iusto perferendis itaque tenetur, expedita provident sit facere doloremque sint quidem exercitationem aperiam! Ratione placeat fugit laboriosam commodi.
+    Explicabo, cumque. Fugiat ea sint, dolorum deleniti, itaque numquam nostrum laudantium maiores dolorem ipsam eius voluptates atque, magnam totam qui praesentium? Aspernatur quidem vitae a iure molestiae fugit sit impedit.
+    Possimus hic quod laudantium voluptas similique perspiciatis error sequi animi nihil corrupti! Atque saepe voluptatum accusamus eaque ipsum eligendi voluptate. Cum quibusdam aliquam sequi quam omnis quos nesciunt nobis asperiores!
+    Obcaecati id ipsum maiores quam reiciendis suscipit natus blanditiis assumenda deleniti in accusantium aliquam magni nobis autem molestiae, dolore eum inventore cumque sequi minima corrupti. Excepturi repudiandae dicta animi nostrum!
+    Dolorem numquam illo nostrum vero accusamus beatae earum atque quibusdam mollitia corporis. Nobis enim quas, maxime voluptates fugiat commodi ipsum! Quo repellat non dolorem qui quaerat nemo, aspernatur minus possimus!
+    </p>
+    </div>
+
+    <button id = "btn" onclick="toggleHide()">Show/Hide</button>
+
+    <script>
+
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            console.log('Mouse inside');
+        });  
+        
+        para.addEventListener('mouseout',function run(){
+            console.log('Mouse outside');
+        });  
+        function toggleHide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if(para.style.display != 'none'){
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
