@@ -1,0 +1,34 @@
+-> NodeJs:
+> Node.js is a JavaScript runtime built on Chrome's v8 JavaScript               engine.
+> Node.js is designed to build scalable network applications. 
+> Node.js is free and an open source serve environment.
+> Node.js is allows us to run JavaScript on the server. 
+> Node.js can run on multple OS.
+
+-> Why we use Node.js?
+
+You can use JaveScript in the entire stack.
+Many famous companies use node.js as their backend.
+Nodejs comes with alot of useful built in modules.
+Node.js is fast.
+
+REPL >> read evaluate print loop!
+_ underscore previous element.
+
+Builtin module! 
+
+version:  
+1.3.5
+major.minior.pach
+
+important 
+
+NPM is used for installing a packages like nodemon, slugify etc.
+using comand i.e. npm i nodemon --save-dev
+                  npm i nodemon --global
+nodemon is used for automately save changing we do in file.
+  npm view node version """ is used for to see latest version.
+
+
+postman: ek link ka respones check kar sakte hai, however we have to fetch api to check respones.
+
