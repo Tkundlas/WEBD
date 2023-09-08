@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body{
+    background-color: #938787;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    background: #fff;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:black;
+}
+.header .logo:hover{
+    color: orange;
+}
+
+.navbar ul {
+    font-size: 1.7rem;
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ .menu {
+    display: none;
+    position: absolute;
+    background-color: #f4e5e5;
+    border-radius: 4px;
+}
+
+.navbar li:hover .menu {
+    display: block;
+}
+
+.navbar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.menu li {
+    display: block;
+}
+
+.menu li a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.navbar li a:hover
+{
+  color: orange;
+}
+.menu li a:hover {
+    background-color: #edc0c0;
+    border-radius: 4px;
+}
+.menu ul {
+    display: block;
+    margin: 5px;
+}
+.menu li {
+    width: 150px;
+    padding: 5px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu li:last-child{
+    border-bottom: none;
+}
+
+.heading{
+    text-align: center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:var(--black);
+}
+/* .heading span{
+    background: orange;
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+} */
+
+.btn{
+    margin-top: .5rem;
+    display: inline-block;
+    padding:.8rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    border:.2rem solid black;
+    color:black;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background:orange;
+    color:#fff;
+}
+.product{
+    align-items: center;
+    margin: 2px;
+    padding: 1px;
+}
+.products .product{
+    padding:1rem;
+}
+
+.products .product:first-child{
+    margin-bottom: 2rem;
+}
+
+.products .product .box{
+    margin-right: 80px;
+    margin-bottom: 24px;
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding:3rem 2rem;
+    outline-offset: -1rem;
+    outline: outline;
+    box-shadow: box-shadow;
+    transition: .2s linear;
+    display: inline-block;
+}
+
+.products .product .box:hover{
+    outline-offset: 0rem;
+    outline: outline-hover;
+}
+
+.products .product .box img{
+    height:20rem;
+}
+
+.products .product .box h3{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.products .product .box .price{
+    font-size: 2rem;
+    color: light-color;
+    padding:.5rem 0;
+}
+
+.products .product .box .stars i{
+    font-size: 1.7rem;
+    color: orange;
+    padding:.5rem 0;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: url('') ; */
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    padding-left: 22rem;
+    padding-right: 20rem;
+    margin-top: 5rem;
+}
+
+.home .content{
+    text-align: center;
+    width:60rem;
+}
+
+.home .content h3{
+    color: black;
+    font-size: 3rem;
+}
+
+.home .content h3 span{
+    color:orange;
+}
